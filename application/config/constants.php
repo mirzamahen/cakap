@@ -83,3 +83,12 @@ defined('EXIT_USER_INPUT')     OR define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+defined('SSO_CLIENT_ID') OR define('SSO_CLIENT_ID', 'CAKAP');
+defined('SSO_CLIENT_SECRET') OR define('SSO_CLIENT_SECRET', 'p6llLPomY32f8RYJE14eqM2AMuqLZ53N');
+defined('SSO_REDIRECT_URL') OR define('SSO_REDIRECT_URL', 'https://cakap.kanwilkemenagdiy.id/sso/callback');
+defined('SSO_AUTH_URL') OR define('SSO_AUTH_URL', 'https://sso.kanwilkemenagdiy.id/realms/master/protocol/openid-connect/auth');
+defined('SSO_TOKEN_URL') OR define('SSO_TOKEN_URL', 'https://sso.kanwilkemenagdiy.id/realms/master/protocol/openid-connect/token');
+defined('SSO_USER_INFO_URL') OR define('SSO_USER_INFO_URL', 'https://sso.kanwilkemenagdiy.id/realms/master/protocol/openid-connect/userinfo');
+defined('SSO_LOGOUT_URL') OR define('SSO_LOGOUT_URL', 'https://sso.kanwilkemenagdiy.id/realms/master/protocol/openid-connect/logout');
+defined('SSO_HOME_URL') OR define('SSO_HOME_URL', 'https://cakap.kanwilkemenagdiy.id');

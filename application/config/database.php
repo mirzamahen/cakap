@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'u621134301_cakap_prakom',
-	'password' => 'xTA;RT#5+',
-	'database' => 'u621134301_cakap_stag',
+	'hostname' => 'awg44s8840kw4kssk048ss4g',
+	'username' => 'cakap',
+	'password' => '7P1q]zzTJSQ1hvAe',
+	'database' => 'cakap',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

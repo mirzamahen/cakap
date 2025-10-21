@@ -1,0 +1,9 @@
+services:
+  cakap:
+    build: .
+    container_name: php74-apache
+    ports:
+      - "127.0.0.1:80:80"
+    volumes:
+      - ./:/var/www/html
+    # restart: unless-stopped
