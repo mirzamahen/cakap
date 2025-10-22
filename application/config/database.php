@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'awg44s8840kw4kssk048ss4g',
-	'username' => 'cakap',
-	'password' => '7P1q]zzTJSQ1hvAe',
-	'database' => 'cakap',
+	'hostname' => getenv('DB_HOST') ?: '127.0.0.1',
+	'username' => getenv('DB_USER') ?: 'root',
+	'password' => getenv('DB_PASS') ?: '',
+	'database' => getenv('DB_NAME') ?: 'ci_database',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
