@@ -23,10 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$http = 'http' . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 's' : '') . '://';
-$http = 'http' . ((isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443') ? 's' : '') . '://';
+// $http = 'http' . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 's' : '') . '://';
+// $http = 'http' . ((isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443') ? 's' : '') . '://';
 $urlbaru = str_replace("index.php","", $_SERVER['SCRIPT_NAME']);
-$config['base_url']    = "$http" . $_SERVER['SERVER_NAME'] . "" . $urlbaru;
+// $config['base_url']    = "$http" . $_SERVER['SERVER_NAME'] . "" . $urlbaru;
+$config['base_url']    = getenv('SSO_HOME_URL') . "" . $urlbaru;
 
 /*
 |--------------------------------------------------------------------------
